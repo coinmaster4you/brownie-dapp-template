@@ -1,0 +1,13 @@
+networks:
+  development:
+    cmd_settings:
+      port: 8545
+      fork: https://api.mycryptoapi.com/eth 
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.0.0
+dotenv: .env
+
